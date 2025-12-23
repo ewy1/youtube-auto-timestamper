@@ -8,11 +8,14 @@
 // @description 12/17/2025, 5:12:31 PM
 // ==/UserScript==
 
-// interval in seconds
+// interval in ms
 const interval = 1000;
+// start delay in ms
 const startDelay = 10000;
-const timeRegex = /(([&?])t=[0-9]+)/
+// substracted time in seconds
 const timeDelay = 0;
+
+const timeRegex = /(([&?])t=[0-9]+)/
 
 const tick = () => {
   const ytplayer = document.getElementById("movie_player");
